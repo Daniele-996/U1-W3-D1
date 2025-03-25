@@ -220,14 +220,14 @@ console.log(filmNewMillenials(movies));
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
-const filmSpecific = function (array, id) {
+const filmSpecific = (array, id) => {
   return array.find((elem) => elem.imdbID === id);
 };
 console.log(filmSpecific(movies, "tt0848228"));
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
-const filmSpecificTwo = function (array, year) {
+const filmSpecificTwo = (array, year) => {
   return array.findIndex((elem) => parseInt(elem.Year === year));
 };
 console.log(filmSpecificTwo(movies, 1978));
